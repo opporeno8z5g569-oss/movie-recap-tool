@@ -3,7 +3,8 @@ import google.generativeai as genai
 import requests
 import re
 import os
-from moviepy.editor import VideoFileClip, concatenate_videoclips
+from moviepy import VideoFileClip, concatenate_videoclips
+
 
 st.set_page_config(page_title="Movie Recap Automation", layout="wide")
 st.title("🎬 All-in-One Movie Recap Automation Tool")
