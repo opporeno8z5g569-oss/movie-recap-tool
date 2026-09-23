@@ -32,7 +32,8 @@ with tab1:
         
         if st.button("Generate Myanmar Script"):
             genai.configure(api_key=gemini_key)
-            model = genai.GenerativeModel("gemini-1.5-pro")
+            model = genai.GenerativeModel("gemini-1.5-flash")
+
             prompt = f"Translate and rewrite this subtitle into an engaging Burmese Movie Recap script. Make it exciting:\n\n{clean_text[:4000]}"
             
             with st.spinner("Generating Burmese Script..."):
